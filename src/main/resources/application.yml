@@ -9,6 +9,18 @@ spring:
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 6
+      max-active: 60
+      max-wait: 60000
+      maxOpenPreparedStatements: 20
+      min-idle: 2
+      minEvictableIdleTimeMillis: 300000
+      poolPreparedStatements: true
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 60000
   mvc:
     view:
       prefix: /WEB-INF/
