@@ -36,13 +36,7 @@ public class UserController {
         return userService.saveUser(user)==1?"SUCCESS":"FAIL";
     }
 
-    //第三种方式对应的Controller
-    @GetMapping(value = "/delUser")
-    @ResponseBody
-    public String delUser(HttpServletRequest request) {
-        Long id = Long.parseLong(request.getParameter("id"));
-        return userService.delUser(id)==1?"SUCCESS":"FAIL";
-    }
+
 
     //跳转到主页
     @GetMapping(value = "index")

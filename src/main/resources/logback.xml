@@ -43,7 +43,7 @@
     </appender>
 
     <!--文件目录控制日志级别-->
-    <logger name="com.boot.demo.mapper" level="DEBUG" />
+    <logger name="com.legend.mapper" level="DEBUG" />
 
     <root level="info">
         <appender-ref ref="CONSOLE" />

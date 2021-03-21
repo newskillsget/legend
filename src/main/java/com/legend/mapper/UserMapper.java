@@ -12,7 +12,7 @@ import java.util.List;
 @Mapper
 public interface UserMapper extends MyMapper<User> {
     //第一种方式，注解sql，方便，但维护性略差
-    @Select("select * from user")
+    @Select("select * from users")
     List<User> selectAll();
 
     //第二种方式，xml方式，易维护

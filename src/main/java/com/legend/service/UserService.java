@@ -23,8 +23,5 @@ public class UserService {
         return userMapper.save(user);
     }
 
-    //第三种方式对应的Service，通用mapper，直接调用现成的增删改查sql
-    public int delUser(Long id) {
-        return userMapper.deleteByPrimaryKey(id);
     }
-}
+

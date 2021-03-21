@@ -1,27 +1,23 @@
 package com.legend.domain;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
-import tk.mybatis.mapper.annotation.KeySql;
 
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.util.Date;
 
 
 @Data
-@Table(name = "user")
+@TableName("users")
 public class User {
-    @Id
-    @KeySql(useGeneratedKeys = true)
-    private Long id;
+    private int id;
     private String name;
     private Date createDate;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
