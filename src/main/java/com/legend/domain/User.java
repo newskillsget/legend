@@ -9,15 +9,15 @@ import java.util.Date;
 @Data
 @TableName("users")
 public class User {
-    private int id;
+    private Integer id;
     private String name;
     private Date createDate;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
