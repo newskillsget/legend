@@ -13,7 +13,6 @@ import java.util.Date;
 import java.util.List;
 
 
-
 @Controller
 public class UserController {
     @Resource
@@ -33,20 +32,19 @@ public class UserController {
         User user = new User();
         user.setName(request.getParameter("username"));
         user.setCreateDate(new Date());
-        return userService.saveUser(user)==1?"SUCCESS":"FAIL";
+        return userService.saveUser(user) == 1 ? "SUCCESS" : "FAIL";
     }
-
 
 
     //跳转到主页
     @GetMapping(value = "index")
-    public String index(){
+    public String index() {
         return "index";
     }
 
     //跳转到登录页面
     @GetMapping(value = "login")
-    public String login(){
+    public String login() {
         return "login";
     }
 }

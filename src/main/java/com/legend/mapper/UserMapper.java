@@ -6,9 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
-
-
-
 @Mapper
 public interface UserMapper extends MyMapper<User> {
     //第一种方式，注解sql，方便，但维护性略差

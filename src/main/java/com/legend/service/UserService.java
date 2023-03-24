@@ -22,6 +22,5 @@ public class UserService {
     public int saveUser(User user) {
         return userMapper.save(user);
     }
-
-    }
+}
 
