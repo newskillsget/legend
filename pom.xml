@@ -14,13 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.11</java.version>
-        <springboot.version>2.6.3</springboot.version>
+        <springboot.version>2.6.6</springboot.version>
     </properties>
     <!--父项目依赖-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.3</version>
+        <version>2.6.6</version>
     </parent>
     <!--项目依赖-->
     <dependencies>
