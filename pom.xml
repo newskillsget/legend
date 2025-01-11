@@ -51,7 +51,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.33</version>
+            <version></version>
         </dependency>
         <!--自动生成getter，setter，equals，hashCode和toString等等-->
         <dependency>
